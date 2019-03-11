@@ -23,6 +23,7 @@ timer();
 
 // 
 
+// need to use Jquery to recreate the form in HTML.
 
 function answers(){
 
