@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
+
+</head>
+<body>
+  <Header>
+        <p>Do you know about the <span id="e1">Earth</span>?<p>
+  </Header>
+
+  <div id="time-left"></div>
+
+  <!-- form with questions and answers, adapted from W3 schools radio input -->
+  <div id="form">
+        <form id="quiz" name="quiz">
+                <p id=lines>The molten rock that sits below the earth's surface is called what?</p>
+                <input type="radio" name= "question1" value="Magma">Magma</input>
+                <input type="radio" name= "question1" value="Pumice">Pumice</input>
+                <input type="radio" name= "question1" value="Water">Water</input>
+                <input type="radio" name= "question1" value="Lava">Lava</input>
+            
+                
+                <p id=lines>Most of the Earth's ____ is stored underground</p>
+                <input type="radio" name= "question2" value="Water vapor">Water vapor</input>
+                <input type="radio" name= "question2" value="Liquid fresh water">Liquid Fresh water</input>
+                <input type="radio" name= "question2" value="Glaciers">Glaciers</input>
+                <input type="radio" name= "question2" value="Liquid salt water">Liquid salt water</input>
+                                            
+                <p id=lines>Class of rock formed by the deposition and cementation of mineral or organic particles is known as?</p>
+                <input type="radio" name= "question3" value="Igneous">Igneous</input>
+                <input type="radio" name= "question3" value="Metamorphic">Metamorphic</input>
+                <input type="radio" name= "question3" value="Sandstone">Sandstone</input>
+                <input type="radio" name= "question3" value="Sedimentary">Sedimentary</input>
+            
+                <p id=lines>Which type of rock is formed under intense heat and pressure?</p>
+                <input type="radio" name= "question4" value="Metamorphic">Metamorphic</input>
+                <input type="radio" name= "question4" value="Mountains">Mountains</input>
+                <input type="radio" name= "question4" value="Igneous">Igneous</input>
+                <input type="radio" name= "question4" value="Jaw Breaker">Jaw Breaker</input>    
+              
+                <p id=lines>Pumice is what type of classification of rock?</p>
+                <input type="radio" name= "question5" value="Metamorphic">Metamorphic</input>
+                <input type="radio" name= "question5" value="Hard">Hard</input>
+                <input type="radio" name= "question5" value="Metamorphic">Metamorphic</input>
+                <input type="radio" name= "question5" value="Igneous">Igneous</input>
+            
+                <input id="button" type="button" value="Submit" onclick="answers();">
+            </form>
+    </div>
+<!-- this div will contain the infomation on how well the user answered. -->
+    <div id="results">
+        <p id="number_correct"></p>
+
+    </div>
+
+    
+</body>
+</html>
